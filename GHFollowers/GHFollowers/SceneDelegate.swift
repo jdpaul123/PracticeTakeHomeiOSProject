@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = createTabBar()
         window?.makeKeyAndVisible()
+
+        configureNavigationBar()
     }
 
     private func createTabBar() -> UITabBarController {
@@ -34,6 +36,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return tabBar
     }
 
+    // I added this method to match the behavior of older versions of iOS
     private func setUINavigationControllerAppearance() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = .systemBackground
@@ -55,6 +58,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
 
         return UINavigationController(rootViewController: favoritesVC)
+    }
+
+    private func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemGreen
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
