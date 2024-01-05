@@ -18,8 +18,43 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Make the window fill out the entire bounds of the scene
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = createTabBar()
         window?.makeKeyAndVisible()
+    }
+
+    private func createTabBar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemGreen
+        UITabBar.appearance().backgroundColor = .systemBackground
+        setUINavigationControllerAppearance()
+        tabBar.viewControllers = [
+            createSearchNC(),
+            createFavoritesNC()
+        ]
+        return tabBar
+    }
+
+    private func setUINavigationControllerAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .systemBackground
+        // setting the scrollEdgeAppearance to an appearance with backgroundColor .systemBackground makes the navigation bar at the top of the screen have a white background
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+
+    private func createSearchNC() -> UINavigationController {
+        let searchVC = SearchVC()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+
+        return UINavigationController(rootViewController: searchVC)
+    }
+
+    private func createFavoritesNC() -> UIViewController {
+        let favoritesVC = FavoritesListVC()
+        favoritesVC.title = "Favorites"
+        favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+
+        return UINavigationController(rootViewController: favoritesVC)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

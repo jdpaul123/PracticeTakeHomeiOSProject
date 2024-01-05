@@ -12,6 +12,8 @@
 		5225EFE32B47B7FF00EABDEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225EFE22B47B7FF00EABDEC /* ViewController.swift */; };
 		5225EFE82B47B80000EABDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5225EFE72B47B80000EABDEC /* Assets.xcassets */; };
 		5225EFEB2B47B80000EABDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5225EFE92B47B80000EABDEC /* LaunchScreen.storyboard */; };
+		5225EFF32B4873AC00EABDEC /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225EFF22B4873AC00EABDEC /* SearchVC.swift */; };
+		5225EFF52B48740A00EABDEC /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225EFF42B48740A00EABDEC /* FavoritesListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		5225EFE72B47B80000EABDEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5225EFEA2B47B80000EABDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5225EFEC2B47B80000EABDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5225EFF22B4873AC00EABDEC /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = "../../App Assets/SearchVC.swift"; sourceTree = "<group>"; };
+		5225EFF42B48740A00EABDEC /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				5225EFDE2B47B7FF00EABDEC /* AppDelegate.swift */,
 				5225EFE02B47B7FF00EABDEC /* SceneDelegate.swift */,
+				5225EFF22B4873AC00EABDEC /* SearchVC.swift */,
+				5225EFF42B48740A00EABDEC /* FavoritesListVC.swift */,
 				5225EFE22B47B7FF00EABDEC /* ViewController.swift */,
 				5225EFE72B47B80000EABDEC /* Assets.xcassets */,
 				5225EFE92B47B80000EABDEC /* LaunchScreen.storyboard */,
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5225EFF32B4873AC00EABDEC /* SearchVC.swift in Sources */,
 				5225EFE32B47B7FF00EABDEC /* ViewController.swift in Sources */,
+				5225EFF52B48740A00EABDEC /* FavoritesListVC.swift in Sources */,
 				5225EFDF2B47B7FF00EABDEC /* AppDelegate.swift in Sources */,
 				5225EFE12B47B7FF00EABDEC /* SceneDelegate.swift in Sources */,
 			);
