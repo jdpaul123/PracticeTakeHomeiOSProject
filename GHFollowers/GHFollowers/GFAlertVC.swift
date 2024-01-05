@@ -25,11 +25,11 @@ class GFAlertVC: UIViewController {
         self.message = message
         self.buttonTitle = buttonTitle
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
