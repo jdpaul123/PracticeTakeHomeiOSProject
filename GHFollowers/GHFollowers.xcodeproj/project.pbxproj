@@ -20,6 +20,7 @@
 		5225F0012B48A39D00EABDEC /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F0002B48A39D00EABDEC /* GFBodyLabel.swift */; };
 		5225F0032B48A43300EABDEC /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F0022B48A43200EABDEC /* GFAlertVC.swift */; };
 		5225F0052B48A96800EABDEC /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F0042B48A96800EABDEC /* UIViewController+Ext.swift */; };
+		5225F00B2B49FAE200EABDEC /* GFContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F00A2B49FAE200EABDEC /* GFContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5225F0002B48A39D00EABDEC /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		5225F0022B48A43200EABDEC /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		5225F0042B48A96800EABDEC /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		5225F00A2B49FAE200EABDEC /* GFContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5225F0022B48A43200EABDEC /* GFAlertVC.swift */,
+				5225F00A2B49FAE200EABDEC /* GFContainerView.swift */,
 				5225EFF82B48802800EABDEC /* GFButton.swift */,
 				5225EFFA2B48839600EABDEC /* GFTextField.swift */,
 				5225EFFE2B48A28100EABDEC /* GFTitleLabel.swift */,
@@ -201,6 +204,7 @@
 				5225EFFB2B48839600EABDEC /* GFTextField.swift in Sources */,
 				5225EFFD2B489BD300EABDEC /* FollowerListVC.swift in Sources */,
 				5225F0012B48A39D00EABDEC /* GFBodyLabel.swift in Sources */,
+				5225F00B2B49FAE200EABDEC /* GFContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
