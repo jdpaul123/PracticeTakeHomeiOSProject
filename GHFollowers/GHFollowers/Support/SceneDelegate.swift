@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBar = UITabBarController()
         UITabBar.appearance().tintColor = .systemGreen
         UITabBar.appearance().backgroundColor = .systemBackground
-        setUINavigationControllerAppearance()
+//        setUINavigationControllerAppearance()
         tabBar.viewControllers = [
             createSearchNC(),
             createFavoritesNC()
@@ -36,13 +36,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return tabBar
     }
 
-    // I added this method to match the behavior of older versions of iOS
-    private func setUINavigationControllerAppearance() {
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .systemBackground
-        // setting the scrollEdgeAppearance to an appearance with backgroundColor .systemBackground makes the navigation bar at the top of the screen have a white background
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    }
+//    // I added this method to match the behavior of older versions of iOS
+//    private func setUINavigationControllerAppearance() {
+//        let appearance = UINavigationBarAppearance()
+//        appearance.backgroundColor = .systemBackground
+//        // setting the scrollEdgeAppearance to an appearance with backgroundColor .systemBackground makes the navigation bar at the top of the screen have a white background
+//        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+//    }
 
     private func createSearchNC() -> UINavigationController {
         let searchVC = SearchVC()
