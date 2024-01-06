@@ -15,15 +15,15 @@ class FollowerListVC: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
 
-        NetworkManager.shared.getFollowers(for: username, page: 1) { followers, errorMessage in
-            guard let followers = followers else {
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+            switch result {
+            case .success(let followers):
+                print("Followers.count = \(followers.count)")
+                print(followers)
+            case .failure(let error):
                 // Present alert with method defined on UIViewController extension
-                self.presentGFAlertMainThread(title: "Bad Stuff Happened", message: errorMessage!.rawValue, buttonTitle: "Ok")
-                return
+                self.presentGFAlertMainThread(title: "Bad Stuff Happened", message: error.rawValue, buttonTitle: "Ok")
             }
-
-            print("Followers.count = \(followers.count)")
-            print(followers)
         }
     }
 

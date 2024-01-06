@@ -15,7 +15,7 @@ import Foundation
     The enum can conform to a type such as String or Int. Each case can have a raw value that is of that type.
     ex. "enum Barcode: String { case upc = "UPC"; case qrcode = "QRCode" }" -> The raw values are "UPC" and "QRCode"
  */
-enum ErrorMessage: String, Error {
+enum GFError: String, Error {
     case invalidUsername = "This username created an invalid request. Please try again."
     case unableToComplete = "Unable to complete your request. Please check your internet connection."
     case invalidResponse = "Invalid response from the server. Please try again."
