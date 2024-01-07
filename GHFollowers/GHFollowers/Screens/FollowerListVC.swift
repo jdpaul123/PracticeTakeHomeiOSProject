@@ -38,30 +38,16 @@ class FollowerListVC: UIViewController {
 
     func configureCollectionView() {
         // have the collection view take up the entire screen
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.resuseID)
     }
 
-    // This function has only local variables and UIViewController properties (ie. there are no green colored text). This is a green flag that we can probably abstract this out of FollowersListVC and into a helper method
-    func createThreeColumnFlowLayout() -> UICollectionViewFlowLayout {
-        // This is providing the width of each column based on splitting the layout of the cells into 3 columns
-        // accounting for padding on either side of the screen (padding) and between each cell (minimumItemSpacing)
-        let width                       = view.bounds.width
-        let padding: CGFloat            = 12
-        let minimumItemSpacing: CGFloat = 10
-        let availableWidth              = width - (padding * 2) - (minimumItemSpacing * 2)
-        let itemWidth                   = availableWidth / 3
-
-        let flowLayout                  = UICollectionViewFlowLayout()
-        flowLayout.sectionInset         = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize             = CGSize(width: itemWidth, height: itemWidth + 40) // add 40 points for the text below the image
-        return flowLayout
-    }
-
     func getFollowers() {
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+        // [unowned self] would force unwrap the self so we should use weak instead with a guard statement to unwrap the value
+        NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .success(let followers):
                 print("Followers.count = \(followers.count)")

@@ -27,6 +27,7 @@
 		5225F0162B4A077F00EABDEC /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F0152B4A077F00EABDEC /* ErrorMessage.swift */; };
 		5225F0192B4A0DE600EABDEC /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F0182B4A0DE600EABDEC /* FollowerCell.swift */; };
 		5225F01B2B4A0E7A00EABDEC /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F01A2B4A0E7A00EABDEC /* GFAvatarImageView.swift */; };
+		5225F01D2B4A549A00EABDEC /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5225F01C2B4A549A00EABDEC /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		5225F0152B4A077F00EABDEC /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		5225F0182B4A0DE600EABDEC /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		5225F01A2B4A0E7A00EABDEC /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		5225F01C2B4A549A00EABDEC /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5225F0152B4A077F00EABDEC /* ErrorMessage.swift */,
+				5225F01C2B4A549A00EABDEC /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				5225EFFB2B48839600EABDEC /* GFTextField.swift in Sources */,
 				5225EFFD2B489BD300EABDEC /* FollowerListVC.swift in Sources */,
 				5225F0162B4A077F00EABDEC /* ErrorMessage.swift in Sources */,
+				5225F01D2B4A549A00EABDEC /* UIHelper.swift in Sources */,
 				5225F0132B4A01A300EABDEC /* NetworkManager.swift in Sources */,
 				5225F0012B48A39D00EABDEC /* GFBodyLabel.swift in Sources */,
 				5225F00B2B49FAE200EABDEC /* GFContainerView.swift in Sources */,
