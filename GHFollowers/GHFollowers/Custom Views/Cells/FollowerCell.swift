@@ -28,6 +28,7 @@ class FollowerCell: UICollectionViewCell {
     }
 
     func configure() {
+        translatesAutoresizingMaskIntoConstraints = false
         addSubview(avatarImageView)
         addSubview(usernameLabel)
 
